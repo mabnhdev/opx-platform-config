@@ -1,7 +1,7 @@
 Source: opx-platform-config
 Section: net
 Priority: optional
-Maintainer: Dell EMC <ops-dev@lists.openswitch.net>
+Maintainer: Dell <support@dell.com>
 Build-Depends: debhelper (>= 9),dh-systemd
 Standards-Version: 3.9.3
 
@@ -38,13 +38,13 @@ Description: Platform specific files for Mellanox SN2700
 Package: opx-platform-config-extreme-x870
 Architecture: any
 # opx-extreme-x870-modules ?????? doesn't exist
-# Depends: opx-extreme-x870-modules, i2c-tools, dmidecode, libopx-sdi-device-drivers1, libopx-sdi-sys1, opx-platform-config-common
-Depends: i2c-tools, dmidecode, libopx-sdi-device-drivers1, libopx-sdi-sys1, opx-platform-config-common
+# Depends: opx-extreme-x870-modules, i2c-tools, dmidecode, libopx-sdi-device-drivers1, libopx-sdi-sys1
+Depends: i2c-tools, dmidecode, libopx-sdi-device-drivers1, libopx-sdi-sys1
 Description: Package to install on an Extreme Networks Summit x870
 
 Package: opx-extreme-x870
 Architecture: any
 # opx-core not built yet; we're not ready for NAS yet.
 # Depends: opx-platform-config-extreme-x870,opx-core
-Depends: opx-platform-config-extreme-x870, opx-logging, opx-cps
+Depends: opx-platform-config-extreme-x870
 Description: Package to install on an Extreme Networks Summit x870

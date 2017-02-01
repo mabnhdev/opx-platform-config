@@ -1,3 +1,4 @@
+common/etc/*						etc
 common-hw/bin/*                                         usr/bin
 vendor/extreme/x870-hw/bin/*                            usr/bin
 vendor/extreme/x870-hw/etc/modules-load.d/*		etc/modules-load.d
