@@ -9,8 +9,6 @@
 set +x
 set -e
 
-. /etc/opx/opx-environment.sh
-
 function wait_for {
     while [ ! -e $1 ] ; do
         echo "Waiting for $1"
@@ -37,9 +35,9 @@ add_device "pca9548 0x70" /sys/bus/i2c/devices/i2c-0/new_device /sys/bus/i2c/dev
 add_device "pca9545 0x71" /sys/bus/i2c/devices/i2c-6/new_device /sys/bus/i2c/devices/i2c-13/new_device 
 add_device "pca9548 0x72" /sys/bus/i2c/devices/i2c-8/new_device /sys/bus/i2c/devices/i2c-21/new_device
 add_device "pca9548 0x73" /sys/bus/i2c/devices/i2c-21/new_device /sys/bus/i2c/devices/i2c-29/new_device
-add_device "g751 0x4f" /sys/bus/i2c/devices/i2c-0/new_device /sys/bus/i2c/devices/0-004f/hwmon/hwmon2/temp1_input
-add_device "lm75 0x4c" /sys/bus/i2c/devices/i2c-5/new_device /sys/bus/i2c/devices/5-004c/hwmon/hwmon3/temp1_input
-add_device "lm75 0x4d" /sys/bus/i2c/devices/i2c-4/new_device /sys/bus/i2c/devices/4-004d/hwmon/hwmon4/temp1_input
+add_device "g751 0x4f" /sys/bus/i2c/devices/i2c-0/new_device /sys/bus/i2c/devices/0-004f/hwmon/hwmon*/temp1_input
+add_device "lm75 0x4c" /sys/bus/i2c/devices/i2c-5/new_device /sys/bus/i2c/devices/5-004c/hwmon/hwmon*/temp1_input
+add_device "lm75 0x4d" /sys/bus/i2c/devices/i2c-4/new_device /sys/bus/i2c/devices/4-004d/hwmon/hwmon*/temp1_input
 
 # Put firmware verions of PLDs in a file
 FIRMWARE_VERSION_FILE=/var/log/firmware_versions
