@@ -14,5 +14,5 @@
 -->
 <switch_config>
 <switch_topology switch_ids="0" />
-<switch id="0" npus="0" />
+<switch id="0" npus="0" hardware_id="0" />
 </switch_config>
