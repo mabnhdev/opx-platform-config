@@ -81,18 +81,18 @@
     </cpld_fan_ctrl>
   </sys_i2c>
   <sys_i2c instance="1" sysfs_name="SMBus iSMT adapter at .*" bus_name="smbus1"/>
-  <sys_i2c instance="2" sysfs_name="i2c-0-mux.* (chan_id 0)" bus_name="smbus2"/>
-  <sys_i2c instance="3" sysfs_name="i2c-0-mux.* (chan_id 1)" bus_name="smbus3"/>
-  <sys_i2c instance="4" sysfs_name="i2c-0-mux.* (chan_id 2)" bus_name="smbus4">
+  <sys_i2c instance="2" sysfs_name="i2c-0-mux (chan_id 0)" bus_name="smbus2"/>
+  <sys_i2c instance="3" sysfs_name="i2c-0-mux (chan_id 1)" bus_name="smbus3"/>
+  <sys_i2c instance="4" sysfs_name="i2c-0-mux (chan_id 2)" bus_name="smbus4">
     <linux_lm75 instance="1" addr="0x4d" low_threshold="10" high_threshold="100" />
   </sys_i2c>
-  <sys_i2c instance="5" sysfs_name="i2c-0-mux.* (chan_id 3)" bus_name="smbus5">
+  <sys_i2c instance="5" sysfs_name="i2c-0-mux (chan_id 3)" bus_name="smbus5">
     <linux_lm75 instance="2" addr="0x4c" low_threshold="10" high_threshold="100" />
   </sys_i2c>
-  <sys_i2c instance="6" sysfs_name="i2c-0-mux.* (chan_id 4)" bus_name="smbus6"/>
-  <sys_i2c instance="7" sysfs_name="i2c-0-mux.* (chan_id 5)" bus_name="smbus7"/>
-  <sys_i2c instance="8" sysfs_name="i2c-0-mux.* (chan_id 6)" bus_name="smbus8"/>
-  <sys_i2c instance="9" sysfs_name="i2c-0-mux.* (chan_id 7)" bus_name="smbus9">
+  <sys_i2c instance="6" sysfs_name="i2c-0-mux (chan_id 4)" bus_name="smbus6"/>
+  <sys_i2c instance="7" sysfs_name="i2c-0-mux (chan_id 5)" bus_name="smbus7"/>
+  <sys_i2c instance="8" sysfs_name="i2c-0-mux (chan_id 6)" bus_name="smbus8"/>
+  <sys_i2c instance="9" sysfs_name="i2c-0-mux (chan_id 7)" bus_name="smbus9">
     <sdi_cpld instance="1" alias="cpld_system" addr="0x5f" width="1" start_addr="0x0" end_addr="0x10">
       <sdi_cpld_pin_group instance="0" start_addr="0x8" start_offset="4" end_offset="6" bus_name="system_led" direction="out" level="0x1" polarity="normal">
         <sdi_mono_color_pin_led instance="0" led_on_value="3" led_off_value="1" alias="system_critical_led" />
@@ -129,17 +129,17 @@
       </sdi_cpld_pin_group>
     </sdi_cpld>
   </sys_i2c>
-  <sys_i2c instance="10" sysfs_name="i2c-6-mux.* (chan_id 0)" bus_name="smbus10"/>
-  <sys_i2c instance="11" sysfs_name="i2c-6-mux.* (chan_id 1)" bus_name="smbus11">
+  <sys_i2c instance="10" sysfs_name="i2c-6-mux (chan_id 0)" bus_name="smbus10"/>
+  <sys_i2c instance="11" sysfs_name="i2c-6-mux (chan_id 1)" bus_name="smbus11">
     <eeprom instance="2" alias="psu_fru2" addr="0x51" size="256" parser="EXTREME_EXOS_PSU_EEPROM" />
     <s6k_psu instance="1" addr="0x59" fan_speed="21000" alias="psu-2" />
   </sys_i2c>
-  <sys_i2c instance="12" sysfs_name="i2c-6-mux.* (chan_id 2)" bus_name="smbus12">
+  <sys_i2c instance="12" sysfs_name="i2c-6-mux (chan_id 2)" bus_name="smbus12">
     <eeprom instance="1" alias="psu_fru1" addr="0x51" size="256" parser="EXTREME_EXOS_PSU_EEPROM" />
     <s6k_psu instance="0" addr="0x59" fan_speed="21000" alias="psu-1" />
   </sys_i2c>
-  <sys_i2c instance="13" sysfs_name="i2c-6-mux.* (chan_id 3)" bus_name="smbus13"/>
-  <sys_i2c instance="14" sysfs_name="i2c-8-mux.* (chan_id 0)" bus_name="smbus14">
+  <sys_i2c instance="13" sysfs_name="i2c-6-mux (chan_id 3)" bus_name="smbus13"/>
+  <sys_i2c instance="14" sysfs_name="i2c-8-mux (chan_id 0)" bus_name="smbus14">
     <sdi_cpld instance="2" alias="cpld_port0" addr="0x5f" width="1" start_addr="0x0" end_addr="0xc">
       <sdi_cpld_pin_group instance="8" start_addr="0x0b" start_offset="0" end_offset="7" bus_name="port0_select" direction="out" level="0x0" polarity="normal" />
       <sdi_cpld_pin_group instance="9" start_addr="0x05" start_offset="0" end_offset="7" bus_name="port0_present" direction="in" polarity="normal" />
@@ -156,7 +156,7 @@
     <qsfp instance="8" addr="0x50" mod_sel_bus="port0_select" mod_sel_value="0x80" mod_pres_bus="port0_present" mod_pres_bitmask="7" mod_reset_bus="port0_reset" mod_reset_bitmask="7" mod_lpmode_bus="port0_lpmode" mod_lpmode_bitmask="7" mod_sel_delay="10" />
   </sys_i2c>
 
-  <sys_i2c instance="15" sysfs_name="i2c-8-mux.* (chan_id 1)" bus_name="smbus15">
+  <sys_i2c instance="15" sysfs_name="i2c-8-mux (chan_id 1)" bus_name="smbus15">
     <sdi_cpld instance="3" alias="cpld_port1" addr="0x5f" width="1" start_addr="0x0" end_addr="0xc">
       <sdi_cpld_pin_group instance="12" start_addr="0x0b" start_offset="0" end_offset="7" bus_name="port1_select" direction="out" level="0x0" polarity="normal" />
       <sdi_cpld_pin_group instance="13" start_addr="0x05" start_offset="0" end_offset="7" bus_name="port1_present" direction="in" polarity="normal" />
@@ -172,7 +172,7 @@
     <qsfp instance="15" addr="0x50" mod_sel_bus="port1_select" mod_sel_value="0x40" mod_pres_bus="port1_present" mod_pres_bitmask="6" mod_reset_bus="port1_reset" mod_reset_bitmask="6" mod_lpmode_bus="port1_lpmode" mod_lpmode_bitmask="6" mod_sel_delay="10" />
     <qsfp instance="16" addr="0x50" mod_sel_bus="port1_select" mod_sel_value="0x80" mod_pres_bus="port1_present" mod_pres_bitmask="7" mod_reset_bus="port1_reset" mod_reset_bitmask="7" mod_lpmode_bus="port1_lpmode" mod_lpmode_bitmask="7" mod_sel_delay="10" />
   </sys_i2c>
-  <sys_i2c instance="16" sysfs_name="i2c-8-mux.* (chan_id 2)" bus_name="smbus16">
+  <sys_i2c instance="16" sysfs_name="i2c-8-mux (chan_id 2)" bus_name="smbus16">
     <sdi_cpld instance="4" alias="cpld_port2" addr="0x5f" width="1" start_addr="0x0" end_addr="0xc">
       <sdi_cpld_pin_group instance="16" start_addr="0x0b" start_offset="0" end_offset="7" bus_name="port2_select" direction="out" level="0x0" polarity="normal" />
       <sdi_cpld_pin_group instance="17" start_addr="0x05" start_offset="0" end_offset="7" bus_name="port2_present" direction="in" polarity="normal" />
@@ -188,7 +188,7 @@
   <qsfp instance="23" addr="0x50" mod_sel_bus="port2_select" mod_sel_value="0x40" mod_pres_bus="port2_present" mod_pres_bitmask="6" mod_reset_bus="port2_reset" mod_reset_bitmask="6" mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="6" mod_sel_delay="10" />
   <qsfp instance="24" addr="0x50" mod_sel_bus="port2_select" mod_sel_value="0x80" mod_pres_bus="port2_present" mod_pres_bitmask="7" mod_reset_bus="port2_reset" mod_reset_bitmask="7" mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="7" mod_sel_delay="10" />
   </sys_i2c>
-  <sys_i2c instance="17" sysfs_name="i2c-8-mux.* (chan_id 3)" bus_name="smbus17">
+  <sys_i2c instance="17" sysfs_name="i2c-8-mux (chan_id 3)" bus_name="smbus17">
     <sdi_cpld instance="5" alias="cpld_port3" addr="0x5f" width="1" start_addr="0x0" end_addr="0xc">
       <sdi_cpld_pin_group instance="20" start_addr="0x0b" start_offset="0" end_offset="7" bus_name="port3_select" direction="out" level="0x0" polarity="normal" />
       <sdi_cpld_pin_group instance="21" start_addr="0x05" start_offset="0" end_offset="7" bus_name="port3_present" direction="in" polarity="normal" />
@@ -204,28 +204,28 @@
     <qsfp instance="31" addr="0x50" mod_sel_bus="port3_select" mod_sel_value="0x40" mod_pres_bus="port3_present" mod_pres_bitmask="6" mod_reset_bus="port3_reset" mod_reset_bitmask="6" mod_lpmode_bus="port3_lpmode" mod_lpmode_bitmask="6" mod_sel_delay="10" />
     <qsfp instance="32" addr="0x50" mod_sel_bus="port3_select" mod_sel_value="0x80" mod_pres_bus="port3_present" mod_pres_bitmask="7" mod_reset_bus="port3_reset" mod_reset_bitmask="7" mod_lpmode_bus="port3_lpmode" mod_lpmode_bitmask="7" mod_sel_delay="10" />
   </sys_i2c>
-  <sys_i2c instance="18" sysfs_name="i2c-8-mux.* (chan_id 4)" bus_name="smbus18"/>
-  <sys_i2c instance="19" sysfs_name="i2c-8-mux.* (chan_id 5)" bus_name="smbus19"/>
-  <sys_i2c instance="20" sysfs_name="i2c-8-mux.* (chan_id 6)" bus_name="smbus20"/>
-  <sys_i2c instance="21" sysfs_name="i2c-8-mux.* (chan_id 7)" bus_name="smbus21"/>
-  <sys_i2c instance="22" sysfs_name="i2c-21-mux.* (chan_id 0)" bus_name="smbus22">
+  <sys_i2c instance="18" sysfs_name="i2c-8-mux (chan_id 4)" bus_name="smbus18"/>
+  <sys_i2c instance="19" sysfs_name="i2c-8-mux (chan_id 5)" bus_name="smbus19"/>
+  <sys_i2c instance="20" sysfs_name="i2c-8-mux (chan_id 6)" bus_name="smbus20"/>
+  <sys_i2c instance="21" sysfs_name="i2c-8-mux (chan_id 7)" bus_name="smbus21"/>
+  <sys_i2c instance="22" sysfs_name="i2c-21-mux (chan_id 0)" bus_name="smbus22">
     <eeprom instance="8" alias="fan_tray_fru6" addr="0x57" size="256" parser="EXTREME_EXOS_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="23" sysfs_name="i2c-21-mux.* (chan_id 1)" bus_name="smbus23">
+  <sys_i2c instance="23" sysfs_name="i2c-21-mux (chan_id 1)" bus_name="smbus23">
     <eeprom instance="7" alias="fan_tray_fru5" addr="0x57" size="256" parser="EXTREME_EXOS_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="24" sysfs_name="i2c-21-mux.* (chan_id 2)" bus_name="smbus24">
+  <sys_i2c instance="24" sysfs_name="i2c-21-mux (chan_id 2)" bus_name="smbus24">
     <eeprom instance="6" alias="fan_tray_fru4" addr="0x57" size="256" parser="EXTREME_EXOS_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="25" sysfs_name="i2c-21-mux.* (chan_id 3)" bus_name="smbus25">
+  <sys_i2c instance="25" sysfs_name="i2c-21-mux (chan_id 3)" bus_name="smbus25">
     <eeprom instance="5" alias="fan_tray_fru3" addr="0x57" size="256" parser="EXTREME_EXOS_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="26" sysfs_name="i2c-21-mux.* (chan_id 4)" bus_name="smbus26">
+  <sys_i2c instance="26" sysfs_name="i2c-21-mux (chan_id 4)" bus_name="smbus26">
     <eeprom instance="4" alias="fan_tray_fru2" addr="0x57" size="256" parser="EXTREME_EXOS_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="27" sysfs_name="i2c-21-mux.* (chan_id 5)" bus_name="smbus27">
+  <sys_i2c instance="27" sysfs_name="i2c-21-mux (chan_id 5)" bus_name="smbus27">
     <eeprom instance="3" alias="fan_tray_fru1" addr="0x57" size="256" parser="EXTREME_EXOS_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="28" sysfs_name="i2c-21-mux.* (chan_id 6)" bus_name="smbus28"/>
-  <sys_i2c instance="29" sysfs_name="i2c-21-mux.* (chan_id 7)" bus_name="smbus29"/>
+  <sys_i2c instance="28" sysfs_name="i2c-21-mux (chan_id 6)" bus_name="smbus28"/>
+  <sys_i2c instance="29" sysfs_name="i2c-21-mux (chan_id 7)" bus_name="smbus29"/>
 </root>

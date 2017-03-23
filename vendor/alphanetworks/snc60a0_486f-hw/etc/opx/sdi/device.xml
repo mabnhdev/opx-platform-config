@@ -80,18 +80,18 @@
     </cpld_fan_ctrl>
   </sys_i2c>
   <sys_i2c instance="2" sysfs_name="SMBus iSMT adapter at .*" bus_name="smbus1"/>
-  <sys_i2c instance="3" sysfs_name="i2c-0-mux-0x70 (chan_id 0)" bus_name="smbus2"/>
-  <sys_i2c instance="4" sysfs_name="i2c-0-mux-0x70 (chan_id 1)" bus_name="smbus3"/>
-  <sys_i2c instance="5" sysfs_name="i2c-0-mux-0x70 (chan_id 2)" bus_name="smbus4">
+  <sys_i2c instance="3" sysfs_name="i2c-0-mux (chan_id 0)" bus_name="smbus2"/>
+  <sys_i2c instance="4" sysfs_name="i2c-0-mux (chan_id 1)" bus_name="smbus3"/>
+  <sys_i2c instance="5" sysfs_name="i2c-0-mux (chan_id 2)" bus_name="smbus4">
     <tmp75 instance="1" addr="0x4d" low_threshold="10" high_threshold="100" />
   </sys_i2c>
-  <sys_i2c instance="6" sysfs_name="i2c-0-mux-0x70 (chan_id 3)" bus_name="smbus5">
+  <sys_i2c instance="6" sysfs_name="i2c-0-mux (chan_id 3)" bus_name="smbus5">
     <tmp75 instance="2" addr="0x4c" low_threshold="10" high_threshold="100" />
   </sys_i2c>
-  <sys_i2c instance="7" sysfs_name="i2c-0-mux-0x70 (chan_id 4)" bus_name="smbus6"/>
-  <sys_i2c instance="8" sysfs_name="i2c-0-mux-0x70 (chan_id 5)" bus_name="smbus7"/>
-  <sys_i2c instance="9" sysfs_name="i2c-0-mux-0x70 (chan_id 6)" bus_name="smbus8"/>
-  <sys_i2c instance="10" sysfs_name="i2c-0-mux-0x70 (chan_id 7)" bus_name="smbus9">
+  <sys_i2c instance="7" sysfs_name="i2c-0-mux (chan_id 4)" bus_name="smbus6"/>
+  <sys_i2c instance="8" sysfs_name="i2c-0-mux (chan_id 5)" bus_name="smbus7"/>
+  <sys_i2c instance="9" sysfs_name="i2c-0-mux (chan_id 6)" bus_name="smbus8"/>
+  <sys_i2c instance="10" sysfs_name="i2c-0-mux (chan_id 7)" bus_name="smbus9">
     <sdi_cpld instance="2" alias="cpld_system" addr="0x5f" width="1" start_addr="0x0" end_addr="0x10">
       <sdi_cpld_pin_group instance="25" start_addr="0x8" start_offset="4" end_offset="6" bus_name="system_led" direction="out" level="0x1" polarity="normal">
         <sdi_mono_color_pin_led instance="1" led_on_value="3" led_off_value="1" alias="system_critical_led" />
@@ -130,18 +130,18 @@
       <sdi_cpld_pin_group instance="35" start_addr="0x02" start_offset="0" end_offset="4" bus_name="system_reset_1" direction="out" level="0x0" polarity="normal" />
     </sdi_cpld>
   </sys_i2c>
-  <sys_i2c instance="11" sysfs_name="i2c-6-mux-0x71 (chan_id 0)" bus_name="smbus10"/>
-  <sys_i2c instance="12" sysfs_name="i2c-6-mux-0x71 (chan_id 1)" bus_name="smbus11">
+  <sys_i2c instance="11" sysfs_name="i2c-6-mux (chan_id 0)" bus_name="smbus10"/>
+  <sys_i2c instance="12" sysfs_name="i2c-6-mux (chan_id 1)" bus_name="smbus11">
     <eeprom instance="2" alias="psu_fru1" addr="0x51" size="256" parser="DELTA_PSU_EEPROM" no_of_fans="1" max_fan_speed="18000"/>
     <s6k_psu instance="1" addr="0x59" fan_speed="18000" alias="psu-1" />
   </sys_i2c>
-  <sys_i2c instance="13" sysfs_name="i2c-6-mux-0x71 (chan_id 2)" bus_name="smbus12">
+  <sys_i2c instance="13" sysfs_name="i2c-6-mux (chan_id 2)" bus_name="smbus12">
     <eeprom instance="3" alias="psu_fru2" addr="0x51" size="256" parser="DELTA_PSU_EEPROM" no_of_fans="1" max_fan_speed="18000" />
     <s6k_psu instance="2" addr="0x59" fan_speed="18000" alias="psu-2" />
   </sys_i2c>
-  <sys_i2c instance="14" sysfs_name="i2c-6-mux-0x71 (chan_id 3)" bus_name="smbus13"/>
+  <sys_i2c instance="14" sysfs_name="i2c-6-mux (chan_id 3)" bus_name="smbus13"/>
   
-  <sys_i2c instance="15" sysfs_name="i2c-8-mux-0x72 (chan_id 0)" bus_name="smbus14">
+  <sys_i2c instance="15" sysfs_name="i2c-8-mux (chan_id 0)" bus_name="smbus14">
     <sdi_cpld instance="3" alias="cpld_port0" addr="0x5b" width="1" start_addr="0x0" end_addr="0x21">
       <sdi_cpld_pin_group instance="36" start_addr="0x10" start_offset="0" end_offset="7" bus_name="port0_0_tx_fault" direction="in" polarity="normal" />
       <sdi_cpld_pin_group instance="37" start_addr="0x11" start_offset="0" end_offset="7" bus_name="port0_1_tx_fault" direction="in" polarity="normal" />
@@ -157,8 +157,8 @@
       <sdi_cpld_pin_group instance="47" start_addr="0x1b" start_offset="0" end_offset="7" bus_name="port0_2_tx_control" direction="out" level="0x0" polarity="normal" />
     </sdi_cpld>
   </sys_i2c>
-  <sys_i2c instance="16" sysfs_name="i2c-8-mux-0x72 (chan_id 1)" bus_name="smbus15"/>
-  <sys_i2c instance="17" sysfs_name="i2c-8-mux-0x72 (chan_id 2)" bus_name="smbus16">
+  <sys_i2c instance="16" sysfs_name="i2c-8-mux (chan_id 1)" bus_name="smbus15"/>
+  <sys_i2c instance="17" sysfs_name="i2c-8-mux (chan_id 2)" bus_name="smbus16">
     <sdi_cpld instance="4" alias="cpld_port1" addr="0x5c" width="1" start_addr="0x0" end_addr="0x21">
       <sdi_cpld_pin_group instance="48" start_addr="0x10" start_offset="0" end_offset="7" bus_name="port1_0_tx_fault" direction="in" polarity="normal" />
       <sdi_cpld_pin_group instance="49" start_addr="0x11" start_offset="0" end_offset="7" bus_name="port1_1_tx_fault" direction="in" polarity="normal" />
@@ -174,8 +174,8 @@
       <sdi_cpld_pin_group instance="59" start_addr="0x1b" start_offset="0" end_offset="7" bus_name="port1_2_tx_control" direction="out" level="0x0" polarity="normal" />
     </sdi_cpld>
   </sys_i2c>
-  <sys_i2c instance="18" sysfs_name="i2c-8-mux-0x72 (chan_id 3)" bus_name="smbus17"/>
-  <sys_i2c instance="19" sysfs_name="i2c-8-mux-0x72 (chan_id 4)" bus_name="smbus18">
+  <sys_i2c instance="18" sysfs_name="i2c-8-mux (chan_id 3)" bus_name="smbus17"/>
+  <sys_i2c instance="19" sysfs_name="i2c-8-mux (chan_id 4)" bus_name="smbus18">
     <sdi_cpld instance="5" alias="cpld_port2" addr="0x5d" width="1" start_addr="0x0" end_addr="0x21">
       <sdi_cpld_pin_group instance="60" start_addr="0x01" start_offset="0" end_offset="5" bus_name="port2_interrupt" direction="in" polarity="normal" />      
       <sdi_cpld_pin_group instance="61" start_addr="0x05" start_offset="0" end_offset="5" bus_name="port2_presence" direction="in" polarity="normal" />      
@@ -184,191 +184,191 @@
       <sdi_cpld_pin_group instance="64" start_addr="0x0b" start_offset="0" end_offset="5" bus_name="port2_mod_sel" direction="out" level="0x0" polarity="normal" />      
     </sdi_cpld>
   </sys_i2c>
-  <sys_i2c instance="20" sysfs_name="i2c-8-mux-0x72 (chan_id 5)" bus_name="smbus19"/>
-  <sys_i2c instance="21" sysfs_name="i2c-8-mux-0x72 (chan_id 6)" bus_name="smbus20"/>
-  <sys_i2c instance="22" sysfs_name="i2c-8-mux-0x72 (chan_id 7)" bus_name="smbus21"/>
+  <sys_i2c instance="20" sysfs_name="i2c-8-mux (chan_id 5)" bus_name="smbus19"/>
+  <sys_i2c instance="21" sysfs_name="i2c-8-mux (chan_id 6)" bus_name="smbus20"/>
+  <sys_i2c instance="22" sysfs_name="i2c-8-mux (chan_id 7)" bus_name="smbus21"/>
 
-  <sys_i2c instance="23" sysfs_name="i2c-21-mux-0x73 (chan_id 0)" bus_name="smbus22">
+  <sys_i2c instance="23" sysfs_name="i2c-21-mux (chan_id 0)" bus_name="smbus22">
     <eeprom instance="4" alias="fan_tray_fru6" addr="0x57" size="256" parser="ONIE_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="24" sysfs_name="i2c-21-mux-0x73 (chan_id 1)" bus_name="smbus23">
+  <sys_i2c instance="24" sysfs_name="i2c-21-mux (chan_id 1)" bus_name="smbus23">
     <eeprom instance="5" alias="fan_tray_fru5" addr="0x57" size="256" parser="ONIE_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="25" sysfs_name="i2c-21-mux-0x73 (chan_id 2)" bus_name="smbus24">
+  <sys_i2c instance="25" sysfs_name="i2c-21-mux (chan_id 2)" bus_name="smbus24">
     <eeprom instance="6" alias="fan_tray_fru4" addr="0x57" size="256" parser="ONIE_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="26" sysfs_name="i2c-21-mux-0x73 (chan_id 3)" bus_name="smbus25">
+  <sys_i2c instance="26" sysfs_name="i2c-21-mux (chan_id 3)" bus_name="smbus25">
     <eeprom instance="7" alias="fan_tray_fru3" addr="0x57" size="256" parser="ONIE_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="27" sysfs_name="i2c-21-mux-0x73 (chan_id 4)" bus_name="smbus26">
+  <sys_i2c instance="27" sysfs_name="i2c-21-mux (chan_id 4)" bus_name="smbus26">
     <eeprom instance="8" alias="fan_tray_fru2" addr="0x57" size="256" parser="ONIE_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="28" sysfs_name="i2c-21-mux-0x73 (chan_id 5)" bus_name="smbus27">
+  <sys_i2c instance="28" sysfs_name="i2c-21-mux (chan_id 5)" bus_name="smbus27">
     <eeprom instance="9" alias="fan_tray_fru1" addr="0x57" size="256" parser="ONIE_FAN_EEPROM" />
   </sys_i2c>
-  <sys_i2c instance="29" sysfs_name="i2c-21-mux-0x73 (chan_id 6)" bus_name="smbus28"/>
-  <sys_i2c instance="30" sysfs_name="i2c-21-mux-0x73 (chan_id 7)" bus_name="smbus29"/>
+  <sys_i2c instance="29" sysfs_name="i2c-21-mux (chan_id 6)" bus_name="smbus28"/>
+  <sys_i2c instance="30" sysfs_name="i2c-21-mux (chan_id 7)" bus_name="smbus29"/>
 
-  <sys_i2c instance="31" sysfs_name="i2c-15-mux-0x74 (chan_id 0)" bus_name="smbus30">
+  <sys_i2c instance="31" sysfs_name="/dev/i2c-30" bus_name="smbus30">
     <sfp instance="1" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="0" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="0"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="0"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="0" />
   </sys_i2c>
-  <sys_i2c instance="32" sysfs_name="i2c-15-mux-0x74 (chan_id 1)" bus_name="smbus31">
+  <sys_i2c instance="32" sysfs_name="/dev/i2c-31" bus_name="smbus31">
     <sfp instance="2" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="1" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="1"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="1"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="1" />
   </sys_i2c>
-  <sys_i2c instance="33" sysfs_name="i2c-15-mux-0x74 (chan_id 2)" bus_name="smbus32">
+  <sys_i2c instance="33" sysfs_name="/dev/i2c-32" bus_name="smbus32">
     <sfp instance="3" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="2" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="2"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="2"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="2" />
   </sys_i2c>
-  <sys_i2c instance="34" sysfs_name="i2c-15-mux-0x74 (chan_id 3)" bus_name="smbus33">
+  <sys_i2c instance="34" sysfs_name="/dev/i2c-33" bus_name="smbus33">
     <sfp instance="4" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="3" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="3"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="3"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="3" />
   </sys_i2c>
-  <sys_i2c instance="35" sysfs_name="i2c-15-mux-0x74 (chan_id 4)" bus_name="smbus34">
+  <sys_i2c instance="35" sysfs_name="/dev/i2c-34" bus_name="smbus34">
     <sfp instance="5" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="4" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="4"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="4"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="4" />
   </sys_i2c>
-  <sys_i2c instance="36" sysfs_name="i2c-15-mux-0x74 (chan_id 5)" bus_name="smbus35">
+  <sys_i2c instance="36" sysfs_name="/dev/i2c-35" bus_name="smbus35">
     <sfp instance="6" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="5" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="5"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="5"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="5" />
   </sys_i2c>
-  <sys_i2c instance="37" sysfs_name="i2c-15-mux-0x74 (chan_id 6)" bus_name="smbus36">
+  <sys_i2c instance="37" sysfs_name="/dev/i2c-36" bus_name="smbus36">
     <sfp instance="7" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="6" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="6"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="6"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="6" />
   </sys_i2c>
-  <sys_i2c instance="38" sysfs_name="i2c-15-mux-0x74 (chan_id 7)" bus_name="smbus37">
+  <sys_i2c instance="38" sysfs_name="/dev/i2c-37" bus_name="smbus37">
     <sfp instance="8" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_0_present" mod_pres_bitmask="7" mod_tx_control_bus="port0_0_tx_control" mod_tx_control_bitmask="7"  mod_rx_los_bus="port0_0_rx_los" mod_rx_los_bitmask="7"  mod_tx_fault_bus="port0_0_tx_fault" mod_tx_fault_bitmask="7" />
     </sys_i2c>
-  <sys_i2c instance="39" sysfs_name="i2c-15-mux-0x75 (chan_id 0)" bus_name="smbus38">
+  <sys_i2c instance="39" sysfs_name="/dev/i2c-38" bus_name="smbus38">
     <sfp instance="9" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="0" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="0"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="0"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="0" />
   </sys_i2c>
-  <sys_i2c instance="40" sysfs_name="i2c-15-mux-0x75 (chan_id 1)" bus_name="smbus39">
+  <sys_i2c instance="40" sysfs_name="/dev/i2c-39" bus_name="smbus39">
     <sfp instance="10" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="1" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="1"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="1"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="1" />
   </sys_i2c>
-  <sys_i2c instance="41" sysfs_name="i2c-15-mux-0x75 (chan_id 2)" bus_name="smbus40">
+  <sys_i2c instance="41" sysfs_name="/dev/i2c-40" bus_name="smbus40">
     <sfp instance="11" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="2" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="2"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="2"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="2" />
   </sys_i2c>n
-  <sys_i2c instance="42" sysfs_name="i2c-15-mux-0x75 (chan_id 3)" bus_name="smbus41">
+  <sys_i2c instance="42" sysfs_name="/dev/i2c-41" bus_name="smbus41">
     <sfp instance="12" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="3" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="3"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="3"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="3" />
   </sys_i2c>
-  <sys_i2c instance="43" sysfs_name="i2c-15-mux-0x75 (chan_id 4)" bus_name="smbus42">
+  <sys_i2c instance="43" sysfs_name="/dev/i2c-42" bus_name="smbus42">
     <sfp instance="13" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="4" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="4"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="4"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="4" />
   </sys_i2c>
-  <sys_i2c instance="44" sysfs_name="i2c-15-mux-0x75 (chan_id 5)" bus_name="smbus43">
+  <sys_i2c instance="44" sysfs_name="/dev/i2c-43" bus_name="smbus43">
     <sfp instance="14" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="5" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="5"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="5"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="5" />
   </sys_i2c>
-  <sys_i2c instance="45" sysfs_name="i2c-15-mux-0x75 (chan_id 6)" bus_name="smbus44">
+  <sys_i2c instance="45" sysfs_name="/dev/i2c-44" bus_name="smbus44">
     <sfp instance="15" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="6" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="6"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="6"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="6" />
   </sys_i2c>
-  <sys_i2c instance="46" sysfs_name="i2c-15-mux-0x75 (chan_id 7)" bus_name="smbus45">
+  <sys_i2c instance="46" sysfs_name="/dev/i2c-45" bus_name="smbus45">
     <sfp instance="16" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_1_present" mod_pres_bitmask="7" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="7"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="7"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="7" />
     </sys_i2c>
-  <sys_i2c instance="47" sysfs_name="i2c-15-mux-0x76 (chan_id 0)" bus_name="smbus46">
+  <sys_i2c instance="47" sysfs_name="/dev/i2c-46" bus_name="smbus46">
     <sfp instance="17" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="0" mod_tx_control_bus="port0_1_tx_control" mod_tx_control_bitmask="0"  mod_rx_los_bus="port0_1_rx_los" mod_rx_los_bitmask="0"  mod_tx_fault_bus="port0_1_tx_fault" mod_tx_fault_bitmask="0" />
   </sys_i2c>
-  <sys_i2c instance="48" sysfs_name="i2c-15-mux-0x76 (chan_id 1)" bus_name="smbus47">
+  <sys_i2c instance="48" sysfs_name="/dev/i2c-47" bus_name="smbus47">
     <sfp instance="18" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="1" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="1"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="1"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="1" />
   </sys_i2c>
-  <sys_i2c instance="49" sysfs_name="i2c-15-mux-0x76 (chan_id 2)" bus_name="smbus48">
+  <sys_i2c instance="49" sysfs_name="/dev/i2c-48" bus_name="smbus48">
     <sfp instance="19" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="2" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="2"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="2"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="2" />
   </sys_i2c>n
-  <sys_i2c instance="50" sysfs_name="i2c-15-mux-0x76 (chan_id 3)" bus_name="smbus49">
+  <sys_i2c instance="50" sysfs_name="/dev/i2c-49" bus_name="smbus49">
     <sfp instance="20" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="3" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="3"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="3"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="3" />
   </sys_i2c>
-  <sys_i2c instance="51" sysfs_name="i2c-15-mux-0x76 (chan_id 4)" bus_name="smbus50">
+  <sys_i2c instance="51" sysfs_name="/dev/i2c-50" bus_name="smbus50">
     <sfp instance="21" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="4" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="4"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="4"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="4" />
   </sys_i2c>
-  <sys_i2c instance="52" sysfs_name="i2c-15-mux-0x76 (chan_id 5)" bus_name="smbus51">
+  <sys_i2c instance="52" sysfs_name="/dev/i2c-51" bus_name="smbus51">
     <sfp instance="22" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="5" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="5"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="5"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="5" />
   </sys_i2c>
-  <sys_i2c instance="53" sysfs_name="i2c-15-mux-0x76 (chan_id 6)" bus_name="smbus52">
+  <sys_i2c instance="53" sysfs_name="/dev/i2c-52" bus_name="smbus52">
     <sfp instance="23" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="6" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="6"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="6"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="6" />
   </sys_i2c>
-  <sys_i2c instance="54" sysfs_name="i2c-15-mux-0x76 (chan_id 7)" bus_name="smbus53">
+  <sys_i2c instance="54" sysfs_name="/dev/i2c-53" bus_name="smbus53">
     <sfp instance="24" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port0_2_present" mod_pres_bitmask="7" mod_tx_control_bus="port0_2_tx_control" mod_tx_control_bitmask="7"  mod_rx_los_bus="port0_2_rx_los" mod_rx_los_bitmask="7"  mod_tx_fault_bus="port0_2_tx_fault" mod_tx_fault_bitmask="7" />
     </sys_i2c>
-  <sys_i2c instance="55" sysfs_name="i2c-17-mux-0x74 (chan_id 0)" bus_name="smbus54">
+  <sys_i2c instance="55" sysfs_name="/dev/i2c-54" bus_name="smbus54">
     <sfp instance="25" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="0" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="0"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="0"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="0" />
   </sys_i2c>
-  <sys_i2c instance="56" sysfs_name="i2c-17-mux-0x74 (chan_id 1)" bus_name="smbus55">
+  <sys_i2c instance="56" sysfs_name="/dev/i2c-55" bus_name="smbus55">
     <sfp instance="26" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="1" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="1"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="1"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="1" />
   </sys_i2c>
-  <sys_i2c instance="57" sysfs_name="i2c-17-mux-0x74 (chan_id 2)" bus_name="smbus56">
+  <sys_i2c instance="57" sysfs_name="/dev/i2c-56" bus_name="smbus56">
     <sfp instance="27" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="2" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="2"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="2"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="2" />
   </sys_i2c>
-  <sys_i2c instance="58" sysfs_name="i2c-17-mux-0x74 (chan_id 3)" bus_name="smbus57">
+  <sys_i2c instance="58" sysfs_name="/dev/i2c-57" bus_name="smbus57">
     <sfp instance="28" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="3" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="3"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="3"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="3" />
   </sys_i2c>
-  <sys_i2c instance="59" sysfs_name="i2c-17-mux-0x74 (chan_id 4)" bus_name="smbus58">
+  <sys_i2c instance="59" sysfs_name="/dev/i2c-58" bus_name="smbus58">
     <sfp instance="29" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="4" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="4"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="4"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="4" />
   </sys_i2c>
-  <sys_i2c instance="60" sysfs_name="i2c-17-mux-0x74 (chan_id 5)" bus_name="smbus59">
+  <sys_i2c instance="60" sysfs_name="/dev/i2c-59" bus_name="smbus59">
     <sfp instance="30" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="5" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="5"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="5"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="5" />
   </sys_i2c>
-  <sys_i2c instance="61" sysfs_name="i2c-17-mux-0x74 (chan_id 6)" bus_name="smbus60">
+  <sys_i2c instance="61" sysfs_name="/dev/i2c-60" bus_name="smbus60">
     <sfp instance="31" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="6" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="6"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="6"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="6" />
   </sys_i2c>
-  <sys_i2c instance="62" sysfs_name="i2c-17-mux-0x74 (chan_id 7)" bus_name="smbus61">
+  <sys_i2c instance="62" sysfs_name="/dev/i2c-61" bus_name="smbus61">
     <sfp instance="32" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_0_present" mod_pres_bitmask="7" mod_tx_control_bus="port1_0_tx_control" mod_tx_control_bitmask="7"  mod_rx_los_bus="port1_0_rx_los" mod_rx_los_bitmask="7"  mod_tx_fault_bus="port1_0_tx_fault" mod_tx_fault_bitmask="7" />
     </sys_i2c>
-  <sys_i2c instance="63" sysfs_name="i2c-17-mux-0x75 (chan_id 0)" bus_name="smbus62">
+  <sys_i2c instance="63" sysfs_name="/dev/i2c-62" bus_name="smbus62">
     <sfp instance="33" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="0" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="0"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="0"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="0" />
   </sys_i2c>
-  <sys_i2c instance="64" sysfs_name="i2c-17-mux-0x75 (chan_id 1)" bus_name="smbus63">
+  <sys_i2c instance="64" sysfs_name="/dev/i2c-63" bus_name="smbus63">
     <sfp instance="34" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="1" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="1"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="1"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="1" />
   </sys_i2c>
-  <sys_i2c instance="65" sysfs_name="i2c-17-mux-0x75 (chan_id 2)" bus_name="smbus64">
+  <sys_i2c instance="65" sysfs_name="/dev/i2c-64" bus_name="smbus64">
     <sfp instance="35" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="2" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="2"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="2"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="2" />
   </sys_i2c>n
-  <sys_i2c instance="66" sysfs_name="i2c-17-mux-0x75 (chan_id 3)" bus_name="smbus65">
+  <sys_i2c instance="66" sysfs_name="/dev/i2c-65" bus_name="smbus65">
     <sfp instance="36" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="3" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="3"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="3"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="3" />
   </sys_i2c>
-  <sys_i2c instance="67" sysfs_name="i2c-17-mux-0x75 (chan_id 4)" bus_name="smbus66">
+  <sys_i2c instance="67" sysfs_name="/dev/i2c-66" bus_name="smbus66">
     <sfp instance="37" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="4" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="4"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="4"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="4" />
   </sys_i2c>
-  <sys_i2c instance="68" sysfs_name="i2c-17-mux-0x75 (chan_id 5)" bus_name="smbus67">
+  <sys_i2c instance="68" sysfs_name="/dev/i2c-67" bus_name="smbus67">
     <sfp instance="38" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="5" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="5"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="5"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="5" />
   </sys_i2c>
-  <sys_i2c instance="69" sysfs_name="i2c-17-mux-0x75 (chan_id 6)" bus_name="smbus68">
+  <sys_i2c instance="69" sysfs_name="/dev/i2c-68" bus_name="smbus68">
     <sfp instance="39" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="6" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="6"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="6"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="6" />
   </sys_i2c>
-  <sys_i2c instance="70" sysfs_name="i2c-17-mux-0x75 (chan_id 7)" bus_name="smbus69">
+  <sys_i2c instance="70" sysfs_name="/dev/i2c-69" bus_name="smbus69">
     <sfp instance="40" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_1_present" mod_pres_bitmask="7" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="7"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="7"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="7" />
     </sys_i2c>
-  <sys_i2c instance="71" sysfs_name="i2c-17-mux-0x76 (chan_id 0)" bus_name="smbus70">
+  <sys_i2c instance="71" sysfs_name="/dev/i2c-70" bus_name="smbus70">
     <sfp instance="41" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="0" mod_tx_control_bus="port1_1_tx_control" mod_tx_control_bitmask="0"  mod_rx_los_bus="port1_1_rx_los" mod_rx_los_bitmask="0"  mod_tx_fault_bus="port1_1_tx_fault" mod_tx_fault_bitmask="0" />
   </sys_i2c>
-  <sys_i2c instance="72" sysfs_name="i2c-17-mux-0x76 (chan_id 1)" bus_name="smbus71">
+  <sys_i2c instance="72" sysfs_name="/dev/i2c-71" bus_name="smbus71">
     <sfp instance="42" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="1" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="1"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="1"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="1" />
   </sys_i2c>
-  <sys_i2c instance="73" sysfs_name="i2c-17-mux-0x76 (chan_id 2)" bus_name="smbus72">
+  <sys_i2c instance="73" sysfs_name="/dev/i2c-72" bus_name="smbus72">
     <sfp instance="43" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="2" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="2"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="2"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="2" />
   </sys_i2c>n
-  <sys_i2c instance="74" sysfs_name="i2c-17-mux-0x76 (chan_id 3)" bus_name="smbus73">
+  <sys_i2c instance="74" sysfs_name="/dev/i2c-73" bus_name="smbus73">
     <sfp instance="44" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="3" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="3"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="3"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="3" />
   </sys_i2c>
-  <sys_i2c instance="75" sysfs_name="i2c-17-mux-0x76 (chan_id 4)" bus_name="smbus74">
+  <sys_i2c instance="75" sysfs_name="/dev/i2c-74" bus_name="smbus74">
     <sfp instance="45" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="4" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="4"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="4"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="4" />
   </sys_i2c>
-  <sys_i2c instance="76" sysfs_name="i2c-17-mux-0x76 (chan_id 5)" bus_name="smbus75">
+  <sys_i2c instance="76" sysfs_name="/dev/i2c-75" bus_name="smbus75">
     <sfp instance="46" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="5" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="5"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="5"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="5" />
   </sys_i2c>
-  <sys_i2c instance="77" sysfs_name="i2c-17-mux-0x76 (chan_id 6)" bus_name="smbus76">
+  <sys_i2c instance="77" sysfs_name="/dev/i2c-76" bus_name="smbus76">
     <sfp instance="47" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="6" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="6"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="6"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="6" />
   </sys_i2c>
-  <sys_i2c instance="78" sysfs_name="i2c-17-mux-0x76 (chan_id 7)" bus_name="smbus77">
+  <sys_i2c instance="78" sysfs_name="/dev/i2c-77" bus_name="smbus77">
     <sfp instance="48" addr="0x50" mod_sel_bus="module_always_enabled" mod_pres_bus="port1_2_present" mod_pres_bitmask="7" mod_tx_control_bus="port1_2_tx_control" mod_tx_control_bitmask="7"  mod_rx_los_bus="port1_2_rx_los" mod_rx_los_bitmask="7"  mod_tx_fault_bus="port1_2_tx_fault" mod_tx_fault_bitmask="7" />
   </sys_i2c>
-  <sys_i2c instance="79" sysfs_name="i2c-19-mux-0x74 (chan_id 0)" bus_name="smbus78">
+  <sys_i2c instance="79" sysfs_name="i2c-19-mux (chan_id 0)" bus_name="smbus78">
     <qsfp instance="1" addr="0x50" mod_sel_bus="port2_mod_sel" mod_sel_value="0x01" mod_pres_bus="port2_presence" mod_pres_bitmask="0" mod_reset_bus="port2_reset" mod_reset_bitmask="0"  mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="0" mod_sel_delay="40" />
   </sys_i2c>
-  <sys_i2c instance="80" sysfs_name="i2c-19-mux-0x74 (chan_id 1)" bus_name="smbus79">
+  <sys_i2c instance="80" sysfs_name="i2c-19-mux (chan_id 1)" bus_name="smbus79">
     <qsfp instance="2" addr="0x50" mod_sel_bus="port2_mod_sel" mod_sel_value="0x02" mod_pres_bus="port2_presence" mod_pres_bitmask="1" mod_reset_bus="port2_reset" mod_reset_bitmask="1"  mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="1" mod_sel_delay="40" />
   </sys_i2c>
-  <sys_i2c instance="81" sysfs_name="i2c-19-mux-0x74 (chan_id 2)" bus_name="smbus80">
+  <sys_i2c instance="81" sysfs_name="i2c-19-mux (chan_id 2)" bus_name="smbus80">
     <qsfp instance="3" addr="0x50" mod_sel_bus="port2_mod_sel" mod_sel_value="0x04" mod_pres_bus="port2_presence" mod_pres_bitmask="2" mod_reset_bus="port2_reset" mod_reset_bitmask="2"  mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="2" mod_sel_delay="40" />
   </sys_i2c>
-  <sys_i2c instance="82" sysfs_name="i2c-19-mux-0x74 (chan_id 3)" bus_name="smbus81">
+  <sys_i2c instance="82" sysfs_name="i2c-19-mux (chan_id 3)" bus_name="smbus81">
     <qsfp instance="4" addr="0x50" mod_sel_bus="port2_mod_sel" mod_sel_value="0x08" mod_pres_bus="port2_presence" mod_pres_bitmask="3" mod_reset_bus="port2_reset" mod_reset_bitmask="3"  mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="3" mod_sel_delay="40" />
   </sys_i2c>
-  <sys_i2c instance="83" sysfs_name="i2c-19-mux-0x74 (chan_id 4)" bus_name="smbus82">
+  <sys_i2c instance="83" sysfs_name="i2c-19-mux (chan_id 4)" bus_name="smbus82">
     <qsfp instance="5" addr="0x50" mod_sel_bus="port2_mod_sel" mod_sel_value="0x10" mod_pres_bus="port2_presence" mod_pres_bitmask="4" mod_reset_bus="port2_reset" mod_reset_bitmask="4"  mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="4" mod_sel_delay="40" />
   </sys_i2c>
-  <sys_i2c instance="84" sysfs_name="i2c-19-mux-0x74 (chan_id 5)" bus_name="smbus83">
+  <sys_i2c instance="84" sysfs_name="i2c-19-mux (chan_id 5)" bus_name="smbus83">
     <qsfp instance="6" addr="0x50" mod_sel_bus="port2_mod_sel" mod_sel_value="0x20" mod_pres_bus="port2_presence" mod_pres_bitmask="5" mod_reset_bus="port2_reset" mod_reset_bitmask="5"  mod_lpmode_bus="port2_lpmode" mod_lpmode_bitmask="5" mod_sel_delay="40" />
   </sys_i2c>
 </root>
