@@ -28,7 +28,7 @@
  FC-8/zQSFP0 - FC-31/zQSFP23, FC-0/zQSFP24 - FC-7/zQSFP31.
 
  The hwport numbers below are the "physical ports inside the Broadcom Tomahawk chip not
- the SAI/SDK logical port number.
+ the SAI/SDK logical port numbers.
 -->
 <front-panel>
 	<front-panel-port id="1" slot="0" npu="0" mac_offset="1" phy_media="1" breakout="false" name="e101-001-0">
@@ -109,115 +109,115 @@
 		<entry hwport="83" />
 		<entry hwport="84" />
 	</front-panel-port>
-	<front-panel-port id="14" slot="0" npu="0" mac_offset="50" phy_media="14" breakout="false" name="e101-014-0">
+	<front-panel-port id="14" slot="0" npu="0" mac_offset="53" phy_media="14" breakout="false" name="e101-014-0">
 		<entry hwport="85" />
 		<entry hwport="86" />
 		<entry hwport="87" />
 		<entry hwport="88" />
 	</front-panel-port>
-	<front-panel-port id="15" slot="0" npu="0" mac_offset="51" phy_media="15" breakout="false" name="e101-015-0">
+	<front-panel-port id="15" slot="0" npu="0" mac_offset="57" phy_media="15" breakout="false" name="e101-015-0">
 		<entry hwport="89" />
 		<entry hwport="90" />
 		<entry hwport="91" />
 		<entry hwport="92" />
 	</front-panel-port>
-	<front-panel-port id="16" slot="0" npu="0" mac_offset="52" phy_media="16" breakout="false" name="e101-016-0">
+	<front-panel-port id="16" slot="0" npu="0" mac_offset="61" phy_media="16" breakout="false" name="e101-016-0">
 		<entry hwport="93" />
 		<entry hwport="94" />
 		<entry hwport="95" />
 		<entry hwport="96" />
 	</front-panel-port>
-	<front-panel-port id="17" slot="0" npu="0" mac_offset="53" phy_media="17" breakout="false" name="e101-017-0">
+	<front-panel-port id="17" slot="0" npu="0" mac_offset="65" phy_media="17" breakout="false" name="e101-017-0">
 		<entry hwport="97" />
 		<entry hwport="98" />
 		<entry hwport="99" />
 		<entry hwport="100" />
 	</front-panel-port>
-	<front-panel-port id="18" slot="0" npu="0" mac_offset="57" phy_media="18" breakout="false" name="e101-018-0">
+	<front-panel-port id="18" slot="0" npu="0" mac_offset="69" phy_media="18" breakout="false" name="e101-018-0">
 		<entry hwport="101" />
 		<entry hwport="102" />
 		<entry hwport="103" />
 		<entry hwport="104" />
 	</front-panel-port>
-	<front-panel-port id="19" slot="0" npu="0" mac_offset="61" phy_media="19" breakout="false" name="e101-019-0">
+	<front-panel-port id="19" slot="0" npu="0" mac_offset="73" phy_media="19" breakout="false" name="e101-019-0">
 		<entry hwport="105" />
 		<entry hwport="106" />
 		<entry hwport="107" />
 		<entry hwport="108" />
 	</front-panel-port>
-	<front-panel-port id="20" slot="0" npu="0" mac_offset="65" phy_media="20" breakout="false" name="e101-020-0">
+	<front-panel-port id="20" slot="0" npu="0" mac_offset="77" phy_media="20" breakout="false" name="e101-020-0">
 		<entry hwport="109" />
 		<entry hwport="110" />
 		<entry hwport="111" />
 		<entry hwport="112" />
 	</front-panel-port>
-	<front-panel-port id="21" slot="0" npu="0" mac_offset="69" phy_media="21" breakout="false" name="e101-021-0">
+	<front-panel-port id="21" slot="0" npu="0" mac_offset="81" phy_media="21" breakout="false" name="e101-021-0">
 		<entry hwport="113" />
 		<entry hwport="114" />
 		<entry hwport="115" />
 		<entry hwport="116" />
 	</front-panel-port>
-	<front-panel-port id="22" slot="0" npu="0" mac_offset="73" phy_media="22" breakout="false" name="e101-022-0">
+	<front-panel-port id="22" slot="0" npu="0" mac_offset="85" phy_media="22" breakout="false" name="e101-022-0">
 		<entry hwport="117" />
 		<entry hwport="118" />
 		<entry hwport="119" />
 		<entry hwport="120" />
 	</front-panel-port>
-	<front-panel-port id="23" slot="0" npu="0" mac_offset="77" phy_media="23" breakout="false" name="e101-023-0">
+	<front-panel-port id="23" slot="0" npu="0" mac_offset="89" phy_media="23" breakout="false" name="e101-023-0">
 		<entry hwport="121" />
 		<entry hwport="122" />
 		<entry hwport="123" />
 		<entry hwport="124" />
 	</front-panel-port>
-	<front-panel-port id="24" slot="0" npu="0" mac_offset="81" phy_media="24" breakout="false" name="e101-024-0">
+	<front-panel-port id="24" slot="0" npu="0" mac_offset="93" phy_media="24" breakout="false" name="e101-024-0">
 		<entry hwport="125" />
 		<entry hwport="126" />
 		<entry hwport="127" />
 		<entry hwport="128" />
 	</front-panel-port>
-	<front-panel-port id="25" slot="0" npu="0" mac_offset="85" phy_media="25" breakout="false" name="e101-025-0">
+	<front-panel-port id="25" slot="0" npu="0" mac_offset="97" phy_media="25" breakout="false" name="e101-025-0">
 		<entry hwport="1" />
 		<entry hwport="2" />
 		<entry hwport="3" />
 		<entry hwport="4" />
 	</front-panel-port>
-	<front-panel-port id="26" slot="0" npu="0" mac_offset="89" phy_media="26" breakout="false" name="e101-026-0">
+	<front-panel-port id="26" slot="0" npu="0" mac_offset="101" phy_media="26" breakout="false" name="e101-026-0">
 		<entry hwport="5" />
 		<entry hwport="6" />
 		<entry hwport="7" />
 		<entry hwport="8" />
 	</front-panel-port>
-	<front-panel-port id="27" slot="0" npu="0" mac_offset="93" phy_media="27" breakout="false" name="e101-027-0">
+	<front-panel-port id="27" slot="0" npu="0" mac_offset="105" phy_media="27" breakout="false" name="e101-027-0">
 		<entry hwport="9" />
 		<entry hwport="10" />
 		<entry hwport="11" />
 		<entry hwport="12" />
 	</front-panel-port>
-	<front-panel-port id="28" slot="0" npu="0" mac_offset="97" phy_media="28" breakout="false" name="e101-028-0">
+	<front-panel-port id="28" slot="0" npu="0" mac_offset="109" phy_media="28" breakout="false" name="e101-028-0">
 		<entry hwport="13" />
 		<entry hwport="14" />
 		<entry hwport="15" />
 		<entry hwport="16" />
 	</front-panel-port>
-	<front-panel-port id="29" slot="0" npu="0" mac_offset="101" phy_media="29" breakout="false" name="e101-029-0">
+	<front-panel-port id="29" slot="0" npu="0" mac_offset="113" phy_media="29" breakout="false" name="e101-029-0">
 		<entry hwport="17" />
 		<entry hwport="18" />
 		<entry hwport="19" />
 		<entry hwport="20" />
 	</front-panel-port>
-	<front-panel-port id="30" slot="0" npu="0" mac_offset="102" phy_media="30" breakout="false" name="e101-030-0">
+	<front-panel-port id="30" slot="0" npu="0" mac_offset="117" phy_media="30" breakout="false" name="e101-030-0">
 		<entry hwport="21" />
 		<entry hwport="22" />
 		<entry hwport="23" />
 		<entry hwport="24" />
 	</front-panel-port>
-	<front-panel-port id="31" slot="0" npu="0" mac_offset="103" phy_media="31" breakout="false" name="e101-031-0">
+	<front-panel-port id="31" slot="0" npu="0" mac_offset="121" phy_media="31" breakout="false" name="e101-031-0">
 		<entry hwport="25" />
 		<entry hwport="26" />
 		<entry hwport="27" />
 		<entry hwport="28" />
 	</front-panel-port>
-	<front-panel-port id="32" slot="0" npu="0" mac_offset="104" phy_media="32" breakout="false" name="e101-032-0">
+	<front-panel-port id="32" slot="0" npu="0" mac_offset="125" phy_media="32" breakout="false" name="e101-032-0">
 		<entry hwport="29" />
 		<entry hwport="30" />
 		<entry hwport="31" />
