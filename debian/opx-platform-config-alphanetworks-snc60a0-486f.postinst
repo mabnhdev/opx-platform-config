@@ -1,7 +1,7 @@
 # Process files in /etc/modules-load.d including opx-hw.conf
 # to ensure kernel modules are loaded after installation. The kernel
 # modules may have been supplied as part of the kernel or as part of this
-# package.systemctl restart systemd-modules-load
+# package.
 systemctl restart systemd-modules-load
 
 # Now do everything else that debhelper has provided.
